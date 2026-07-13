@@ -1,0 +1,49 @@
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.cache/
+.vs/
+
+# OMR scratch / temp workdirs
+.tmp_omr/
+_omr_work/
+_omr_zoom/
+
+# Large OMR datasets (download via scripts/download_datasets.ps1)
+data/archives/
+data/primus/
+data/camera-primus/
+data/mashcima/
+data/mashcima-cache/
+data/smoke_train_subset/
+data/consolidated/
+data/MUSCIMA-pp_v1.0.zip
+
+# Golden-set images (keep manifests/JSON if tracked intentionally; ignore media)
+golden_set/**/*.png
+golden_set/**/*.jpg
+golden_set/**/*.jpeg
+golden_set/**/*.webp
+
+# Mashcima vendor install artifacts
+vendor/Mashcima/
+
+data/corrupt/
+data/smoke_train_subset.zip
+consolidated.zip
+model-qwen2-final.zip
+
+# Model weight dumps (use Hugging Face: NathanZ721/omr-monophonic)
+models/**/*.safetensors
+models/**/*.bin
+models/**/*.pt
+models/**/*.pth
+
+# Batch job / progress logs (regenerable)
+data/*.log
+data/*.jsonl
+data/logs/
+
+# Derived music-LM artifacts (regenerable from data/primus via scripts/build_vocab.py + prepare_dataset.py)
+data/music_lm/

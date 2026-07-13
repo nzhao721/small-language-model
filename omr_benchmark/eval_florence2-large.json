@@ -1,0 +1,1068 @@
+{
+  "phase": "after_training",
+  "model_id": "microsoft/Florence-2-large",
+  "task_prompt": "<OCR>",
+  "use_lora": true,
+  "tokenizer": "primus_closed_vocab",
+  "barline_normalization": "trailing_barline_ignored",
+  "vocab_size": 1786,
+  "n_samples": 100,
+  "expected_samples": 100,
+  "overall": {
+    "exact_match": 45,
+    "mean_error_rate_pct": 5.21,
+    "mean_accuracy_pct": 94.79
+  },
+  "by_group": {
+    "handwritten_original": {
+      "n": 10,
+      "exact_match": 2,
+      "mean_error_rate_pct": 10.23,
+      "mean_accuracy_pct": 89.77
+    },
+    "clean_original": {
+      "n": 10,
+      "exact_match": 6,
+      "mean_error_rate_pct": 2.35,
+      "mean_accuracy_pct": 97.65
+    },
+    "camera_distorted_original": {
+      "n": 10,
+      "exact_match": 6,
+      "mean_error_rate_pct": 4.39,
+      "mean_accuracy_pct": 95.61
+    },
+    "handwritten_corrupt": {
+      "n": 10,
+      "exact_match": 4,
+      "mean_error_rate_pct": 6.74,
+      "mean_accuracy_pct": 93.26
+    },
+    "clean_corrupt": {
+      "n": 10,
+      "exact_match": 8,
+      "mean_error_rate_pct": 1.81,
+      "mean_accuracy_pct": 98.19
+    },
+    "camera_distorted_corrupt": {
+      "n": 10,
+      "exact_match": 5,
+      "mean_error_rate_pct": 4.48,
+      "mean_accuracy_pct": 95.52
+    },
+    "manual_handwritten": {
+      "n": 20,
+      "exact_match": 2,
+      "mean_error_rate_pct": 9.35,
+      "mean_accuracy_pct": 90.65
+    },
+    "manual_digital": {
+      "n": 20,
+      "exact_match": 12,
+      "mean_error_rate_pct": 1.69,
+      "mean_accuracy_pct": 98.31
+    }
+  },
+  "samples": [
+    {
+      "group": "handwritten_original",
+      "filename": "000132946-1_21_1.jpg",
+      "gt_tokens": 26,
+      "pred_tokens": 26,
+      "errors": 0,
+      "error_rate_pct": 0.0,
+      "accuracy_pct": 100.0,
+      "prediction": "clef-G2 timeSignature-3/2 note-C5_eighth note-D5_eighth note-E5_quarter. note-F5_eighth note-G5_quarter note-D5_half barline note-D5_eighth note-E5_eighth note-F5_quarter. note-G5_eighth note-A5_quarter note-E5_quarter rest-eighth note-A5_eighth barline note-G5_eighth note-F5_eighth note-E5_quarter rest-eighth note-D5_eighth note-C5_eighth note-B4_eighth note-A4_quarter"
+    },
+    {
+      "group": "handwritten_original",
+      "filename": "230000659-1_3_1.jpg",
+      "gt_tokens": 28,
+      "pred_tokens": 28,
+      "errors": 1,
+      "error_rate_pct": 3.57,
+      "accuracy_pct": 96.43,
+      "prediction": "clef-G2 keySignature-DM timeSignature-3/8 note-D4_quarter note-D4_eighth barline note-F#4_quarter note-F#4_eighth barline note-A4_quarter note-A4_eighth barline note-D5_quarter note-D5_eighth barline note-F#5_quarter note-D5_eighth barline note-A5_eighth note-F#5_eighth note-D5_eighth barline note-A5_quarter note-G5_eighth note-F#5_eighth barline note-E5_quarter. barline"
+    },
+    {
+      "group": "handwritten_original",
+      "filename": "220010817-1_18_1.jpg",
+      "gt_tokens": 21,
+      "pred_tokens": 21,
+      "errors": 0,
+      "error_rate_pct": 0.0,
+      "accuracy_pct": 100.0,
+      "prediction": "clef-G2 keySignature-EM timeSignature-3/4 rest-quarter note-E4_quarter note-G#4_quarter barline note-B4_quarter. note-B4_eighth note-C#5_eighth note-D#5_eighth barline note-E5_quarter. note-G#5_eighth note-F#5_eighth note-E5_eighth barline note-D#5_quarter. note-C#5_eighth note-B4_quarter barline"
+    },
+    {
+      "group": "handwritten_original",
+      "filename": "220034811-1_2_1.jpg",
+      "gt_tokens": 26,
+      "pred_tokens": 14,
+      "errors": 12,
+      "error_rate_pct": 46.15,
+      "accuracy_pct": 53.85,
+      "prediction": "clef-C3 timeSignature-C/ rest-quarter rest-eighth note-C4_eighth note-E4_quarter rest-eighth note-E4_eighth barline note-A4_quarter note-A4_quarter note-G#4_quarter rest-eighth note-E4_eighth"
+    },
+    {
+      "group": "handwritten_original",
+      "filename": "190019918-1_1_1.jpg",
+      "gt_tokens": 24,
+      "pred_tokens": 24,
+      "errors": 1,
+      "error_rate_pct": 4.17,
+      "accuracy_pct": 95.83,
+      "prediction": "clef-G2 keySignature-DM timeSignature-C/ note-D4_eighth note-F#4_eighth note-B3_eighth note-C#4_eighth note-D4_eighth note-F#4_eighth note-Bb3_eighth note-D4_eighth barline note-C#4_eighth note-F#4_eighth note-G4_sixteenth note-F#4_sixteenth note-E#4_sixteenth note-F#4_sixteenth note-A#4_eighth note-F#4_eighth note-C#5_eighth note-E4_eighth barline note-D4_eighth"
+    },
+    {
+      "group": "handwritten_original",
+      "filename": "212001709-1_4_1.jpg",
+      "gt_tokens": 27,
+      "pred_tokens": 27,
+      "errors": 2,
+      "error_rate_pct": 7.41,
+      "accuracy_pct": 92.59,
+      "prediction": "clef-G2 keySignature-EM timeSignature-3/8 note-E4_sixteenth note-G#4_sixteenth note-B4_sixteenth note-E5_sixteenth note-G#5_sixteenth note-B5_sixteenth barline note-F#5_sixteenth note-D#5_sixteenth note-B4_sixteenth note-F#4_sixteenth note-D#4_sixteenth note-B3_sixteenth barline note-E4_sixteenth note-G#4_sixteenth note-D#5_sixteenth note-E5_sixteenth note-G#5_sixteenth note-D#4_sixteenth barline note-D#5_eighth note-B3_quarter barline"
+    },
+    {
+      "group": "handwritten_original",
+      "filename": "150203639-1_2_1.jpg",
+      "gt_tokens": 18,
+      "pred_tokens": 18,
+      "errors": 1,
+      "error_rate_pct": 5.56,
+      "accuracy_pct": 94.44,
+      "prediction": "clef-G2 keySignature-GM timeSignature-6/8 note-D5_quarter note-D5_eighth barline note-D5_eighth note-B4_eighth note-D5_eighth note-D5_eighth note-B4_eighth note-D#5_eighth barline note-D5_quarter note-B4_eighth note-G4_quarter note-F#4_eighth barline"
+    },
+    {
+      "group": "handwritten_original",
+      "filename": "220001519-1_1_1.jpg",
+      "gt_tokens": 21,
+      "pred_tokens": 17,
+      "errors": 5,
+      "error_rate_pct": 23.81,
+      "accuracy_pct": 76.19,
+      "prediction": "clef-G2 keySignature-BbM timeSignature-C note-D5_quarter note-D5_eighth. note-D5_sixteenth note-D5_quarter note-D5_quarter barline note-Eb5_half. rest-quarter barline note-D5_quarter note-D5_eighth. note-C5_sixteenth note-D5_quarter note-D5_quarter"
+    },
+    {
+      "group": "handwritten_original",
+      "filename": "000128225-1_1_1.jpg",
+      "gt_tokens": 36,
+      "pred_tokens": 36,
+      "errors": 2,
+      "error_rate_pct": 5.56,
+      "accuracy_pct": 94.44,
+      "prediction": "clef-G2 keySignature-AM timeSignature-C/ note-A5_quarter note-E5_eighth note-G#5_eighth note-A5_sixteenth note-G#5_sixteenth note-F#5_sixteenth note-E5_sixteenth note-D5_sixteenth note-C#5_sixteenth note-B4_sixteenth note-A4_sixteenth barline note-C#5_quarter note-A4_eighth note-E5_eighth note-E5_eighth note-G#5_eighth barline note-A5_quarter note-E5_eighth note-G#5_sixteenth note-A5_sixteenth note-G#5_sixteenth note-F5_sixteenth note-E5_sixteenth note-C#5_sixteenth note-D5_sixteenth note-E5_sixteenth note-C#5_sixteenth barline note-B5_eighth note-B4_eighth note-C#5_quarter"
+    },
+    {
+      "group": "handwritten_original",
+      "filename": "000132422-1_1_1.jpg",
+      "gt_tokens": 33,
+      "pred_tokens": 33,
+      "errors": 2,
+      "error_rate_pct": 6.06,
+      "accuracy_pct": 93.94,
+      "prediction": "clef-G2 keySignature-DM timeSignature-6/8 note-A4_eighth barline note-D5_eighth note-D5_eighth note-D5_eighth note-E5_eighth note-D5_eighth note-D5_eighth barline note-D5_eighth note-E5_eighth note-F#5_eighth note-F#5_eighth note-E5_eighth note-D5_eighth barline note-E5_eighth note-E5_eighth note-E5_eighth note-E5_eighth_fermata note-E5_eighth note-E5_eighth barline note-E5_eighth note-F#5_eighth note-G5_eighth note-G5_eighth note-F#5_eighth note-E5_eighth barline"
+    },
+    {
+      "group": "clean_original",
+      "filename": "000102395-1_1_1.png",
+      "gt_tokens": 22,
+      "pred_tokens": 22,
+      "errors": 0,
+      "error_rate_pct": 0.0,
+      "accuracy_pct": 100.0,
+      "prediction": "clef-G2 keySignature-FM timeSignature-C/ note-C5_half note-C5_half barline note-C5_quarter note-C5_half note-D5_quarter barline note-Eb5_half note-C5_half barline note-D5_quarter note-D5_quarter note-C5_quarter note-G4_quarter barline note-A4_quarter note-Bb4_quarter note-C5_half barline"
+    },
+    {
+      "group": "clean_original",
+      "filename": "000114963-1_1_1.png",
+      "gt_tokens": 22,
+      "pred_tokens": 22,
+      "errors": 0,
+      "error_rate_pct": 0.0,
+      "accuracy_pct": 100.0,
+      "prediction": "clef-G2 timeSignature-2/4 note-E4_eighth. note-F4_sixteenth note-G4_eighth note-G4_eighth barline note-A4_eighth note-A4_eighth note-G4_quarter barline note-C5_sixteenth note-B4_sixteenth note-C5_sixteenth note-D5_sixteenth note-E5_eighth note-D5_eighth barline note-C5_eighth note-B4_eighth note-C5_quarter barline"
+    },
+    {
+      "group": "clean_original",
+      "filename": "110002051-1_1_1.png",
+      "gt_tokens": 18,
+      "pred_tokens": 18,
+      "errors": 1,
+      "error_rate_pct": 5.56,
+      "accuracy_pct": 94.44,
+      "prediction": "clef-C2 timeSignature-C rest-half note-G4_half note-A4_half note-F4_half note-G4_whole rest-half note-G4_half note-F4_half note-E4_half note-F4_half note-D4_half note-E4_half note-G4_half note-A4_half note-D4_half note-G4_whole"
+    },
+    {
+      "group": "clean_original",
+      "filename": "220031110-1_1_1.png",
+      "gt_tokens": 22,
+      "pred_tokens": 22,
+      "errors": 0,
+      "error_rate_pct": 0.0,
+      "accuracy_pct": 100.0,
+      "prediction": "clef-G2 keySignature-GM timeSignature-C note-G4_half note-B4_half barline note-D5_quarter rest-eighth rest-sixteenth note-G5_sixteenth note-B5_quarter rest-quarter barline rest-eighth note-G4_eighth note-G4_eighth note-G4_eighth note-G4_eighth. note-B4_sixteenth note-D5_eighth rest-eighth barline"
+    },
+    {
+      "group": "clean_original",
+      "filename": "000104407-1_1_1.png",
+      "gt_tokens": 25,
+      "pred_tokens": 26,
+      "errors": 0,
+      "error_rate_pct": 0.0,
+      "accuracy_pct": 100.0,
+      "prediction": "clef-G2 keySignature-DM timeSignature-C note-F#5_quarter note-F#5_quarter note-F#5_eighth. note-E5_sixteenth barline note-E5_quarter note-E5_half barline note-A5_quarter. note-B5_eighth note-A5_eighth note-G5_eighth barline rest-eighth note-F#5_quarter. note-E5_eighth note-D5_eighth barline note-E5_quarter note-E5_quarter note-E5_eighth note-F#5_eighth barline"
+    },
+    {
+      "group": "clean_original",
+      "filename": "190015389-1_1_1.png",
+      "gt_tokens": 16,
+      "pred_tokens": 16,
+      "errors": 0,
+      "error_rate_pct": 0.0,
+      "accuracy_pct": 100.0,
+      "prediction": "clef-G2 keySignature-AM timeSignature-C/ note-A4_quarter note-B4_quarter barline note-C#5_quarter note-D5_quarter note-E5_quarter note-A4_quarter barline note-G#4_quarter note-A4_quarter note-D5_quarter note-C#5_quarter barline"
+    },
+    {
+      "group": "clean_original",
+      "filename": "000112762-1_1_1.png",
+      "gt_tokens": 25,
+      "pred_tokens": 26,
+      "errors": 1,
+      "error_rate_pct": 4.0,
+      "accuracy_pct": 96.0,
+      "prediction": "clef-G2 keySignature-FM timeSignature-C note-C5_quarter note-C5_eighth note-C5_eighth note-A4_quarter. note-F4_eighth barline note-G4_quarter note-E4_quarter note-F4_half barline note-C5_quarter note-C5_eighth tie note-C5_eighth note-D5_quarter. note-Bb4_eighth barline note-F5_quarter. note-D5_eighth note-C5_eighth note-A4_eighth note-F4_quarter barline"
+    },
+    {
+      "group": "clean_original",
+      "filename": "000109599-1_2_1.png",
+      "gt_tokens": 19,
+      "pred_tokens": 19,
+      "errors": 1,
+      "error_rate_pct": 5.26,
+      "accuracy_pct": 94.74,
+      "prediction": "clef-C3 timeSignature-C rest-quarter note-C5_eighth. note-C5_sixteenth note-C5_eighth note-G4_sixteenth note-F4_sixteenth note-G4_eighth note-G4_eighth barline rest-eighth note-G4_sixteenth note-A4_sixteenth note-Bb4_eighth note-Bb4_sixteenth note-A4_sixteenth note-F4_eighth note-F4_eighth"
+    },
+    {
+      "group": "clean_original",
+      "filename": "212002605-1_1_1.png",
+      "gt_tokens": 23,
+      "pred_tokens": 24,
+      "errors": 2,
+      "error_rate_pct": 8.7,
+      "accuracy_pct": 91.3,
+      "prediction": "clef-G2 keySignature-DM timeSignature-2/4 note-D5_quarter note-F#5_sixteenth note-E5_sixteenth note-D5_sixteenth note-C#5_sixteenth barline note-D5_eighth note-A4_eighth note-A5_quarter barline note-D5_quarter note-F#5_sixteenth note-D5_sixteenth note-D5_sixteenth note-C#5_sixteenth note-E4_sixteenth barline note-D5_eighth note-D4_eighth note-A4_quarter barline"
+    },
+    {
+      "group": "clean_original",
+      "filename": "000111721-1_1_1.png",
+      "gt_tokens": 27,
+      "pred_tokens": 27,
+      "errors": 0,
+      "error_rate_pct": 0.0,
+      "accuracy_pct": 100.0,
+      "prediction": "clef-G2 keySignature-AM timeSignature-C note-A4_quarter. note-C#5_eighth note-B4_eighth note-A4_eighth note-B4_eighth note-G#4_eighth barline note-A4_quarter note-C#5_quarter note-A4_quarter note-C#5_quarter barline note-C#5_quarter. note-E5_eighth note-D5_eighth note-C#5_eighth note-D5_eighth note-B4_eighth barline note-C#5_quarter note-E5_quarter note-C#5_quarter note-E5_quarter barline"
+    },
+    {
+      "group": "camera_distorted_original",
+      "filename": "000118903-1_1_1_distorted.jpg",
+      "gt_tokens": 25,
+      "pred_tokens": 25,
+      "errors": 0,
+      "error_rate_pct": 0.0,
+      "accuracy_pct": 100.0,
+      "prediction": "clef-G2 keySignature-DM timeSignature-2/2 note-A4_quarter note-A4_eighth note-A4_eighth barline note-B4_quarter note-D5_quarter note-D5_eighth note-C#5_eighth note-B4_eighth note-A4_eighth barline note-D5_quarter note-A4_quarter note-D5_quarter note-C#5_eighth note-D5_eighth barline note-E5_quarter note-F#5_quarter note-E5_quarter note-G5_quarter barline"
+    },
+    {
+      "group": "camera_distorted_original",
+      "filename": "000111686-1_1_1_distorted.jpg",
+      "gt_tokens": 24,
+      "pred_tokens": 24,
+      "errors": 0,
+      "error_rate_pct": 0.0,
+      "accuracy_pct": 100.0,
+      "prediction": "clef-G2 keySignature-DM timeSignature-6/8 note-A5_eighth barline note-F#5_quarter note-F#5_eighth note-F#5_quarter note-E5_eighth barline note-D5_quarter note-D5_eighth note-D5_quarter note-C#5_eighth barline note-B4_eighth note-C#5_eighth note-D5_eighth note-E5_quarter note-D5_eighth barline note-C#5_quarter note-B4_eighth note-A4_quarter"
+    },
+    {
+      "group": "camera_distorted_original",
+      "filename": "210000061-1_4_1_distorted.jpg",
+      "gt_tokens": 34,
+      "pred_tokens": 34,
+      "errors": 5,
+      "error_rate_pct": 14.71,
+      "accuracy_pct": 85.29,
+      "prediction": "clef-G2 timeSignature-C note-G5_quarter rest-eighth note-G5_eighth note-G5_quarter rest-eighth note-E5_eighth barline note-G5_quarter rest-eighth note-G5_sixteenth note-G5_quarter rest-eighth note-Eb5_eighth barline note-B4_eighth note-G5_eighth note-G5_eighth note-G5_eighth note-E5_eighth note-G5_eighth note-G5_eighth note-F5_eighth barline note-D5_eighth note-G5_eighth note-G5_eighth note-A5_eighth note-C5_eighth note-G5_eighth note-G5_eighth note-G5_quarter barline"
+    },
+    {
+      "group": "camera_distorted_original",
+      "filename": "230003675-1_30_1_distorted.jpg",
+      "gt_tokens": 19,
+      "pred_tokens": 19,
+      "errors": 0,
+      "error_rate_pct": 0.0,
+      "accuracy_pct": 100.0,
+      "prediction": "clef-G2 keySignature-BbM timeSignature-C note-Bb5_half note-A5_half barline note-G5_half note-F5_half barline note-Eb5_quarter note-G5_half note-F5_eighth note-Eb5_eighth barline note-Eb5_quarter. note-F5_sixteenth note-Eb5_sixteenth note-D5_half barline"
+    },
+    {
+      "group": "camera_distorted_original",
+      "filename": "000115397-1_1_1_distorted.jpg",
+      "gt_tokens": 24,
+      "pred_tokens": 24,
+      "errors": 0,
+      "error_rate_pct": 0.0,
+      "accuracy_pct": 100.0,
+      "prediction": "clef-G2 timeSignature-C note-G4_eighth barline note-E4_sixteenth note-A3_eighth. note-E4_eighth. note-D4_sixteenth note-E4_eighth note-A3_eighth note-A3_eighth note-C4_eighth barline note-B3_eighth. note-G4_sixteenth note-E4_sixteenth note-D4_sixteenth note-C4_sixteenth note-B3_sixteenth note-D4_eighth note-G3_eighth note-G3_eighth note-G4_eighth barline"
+    },
+    {
+      "group": "camera_distorted_original",
+      "filename": "220019566-1_1_1_distorted.jpg",
+      "gt_tokens": 20,
+      "pred_tokens": 21,
+      "errors": 1,
+      "error_rate_pct": 5.0,
+      "accuracy_pct": 95.0,
+      "prediction": "clef-G2 keySignature-FM timeSignature-C/ note-F4_half. note-F4_quarter barline note-G4_half note-A4_half barline note-Bb4_whole barline note-A4_whole_fermata note-D5_whole barline note-A4_half note-A4_half barline note-D5_whole barline note-C5_whole_fermata barline"
+    },
+    {
+      "group": "camera_distorted_original",
+      "filename": "210000094-1_7_1_distorted.jpg",
+      "gt_tokens": 36,
+      "pred_tokens": 36,
+      "errors": 5,
+      "error_rate_pct": 13.89,
+      "accuracy_pct": 86.11,
+      "prediction": "clef-G2 timeSignature-C/ rest-sixteenth note-C5_sixteenth note-C5_sixteenth note-C5_sixteenth note-G4_sixteenth note-C5_sixteenth note-C5_sixteenth note-C5_quarter note-E4_sixteenth note-C5_sixteenth note-C5_sixteenth note-D5_sixteenth note-G4_sixteenth note-C5_sixteenth note-C5_eighth note-C5_sixteenth barline note-F4_sixteenth note-C5_sixteenth note-C5_sixteenth note-E5_sixteenth note-A4_sixteenth note-C5_sixteenth note-C5_sixteenth note-C5_eighth note-D4_eighth note-C4_eighth note-G4_eighth note-G3_eighth barline note-C4_quarter rest-quarter rest-half barline"
+    },
+    {
+      "group": "camera_distorted_original",
+      "filename": "190004306-1_1_1_distorted.jpg",
+      "gt_tokens": 29,
+      "pred_tokens": 29,
+      "errors": 3,
+      "error_rate_pct": 10.34,
+      "accuracy_pct": 89.66,
+      "prediction": "clef-G2 keySignature-DM timeSignature-C/ note-D5_eighth note-D4_eighth note-D5_eighth note-D4_eighth note-D5_sixteenth note-E5_sixteenth note-F#5_sixteenth note-G5_sixteenth note-A5_sixteenth note-F#5_sixteenth note-G5_sixteenth note-E5_sixteenth barline note-D5_eighth note-D4_eighth note-D#5_eighth note-D4_eighth note-D5_sixteenth note-F#4_sixteenth note-F#5_sixteenth note-G5_sixteenth note-A5_quarter note-F#5_sixteenth note-E5_sixteenth note-D5_sixteenth barline"
+    },
+    {
+      "group": "camera_distorted_original",
+      "filename": "000101628-1_1_1_distorted.jpg",
+      "gt_tokens": 23,
+      "pred_tokens": 23,
+      "errors": 0,
+      "error_rate_pct": 0.0,
+      "accuracy_pct": 100.0,
+      "prediction": "clef-G2 keySignature-GM timeSignature-C/ note-G4_eighth note-G4_eighth barline note-B4_half note-A4_quarter note-G4_quarter barline note-A4_half rest-quarter note-A4_quarter barline note-D5_quarter. note-G4_eighth note-A4_quarter note-B4_quarter barline note-B4_half note-A4_half barline note-G4_half"
+    },
+    {
+      "group": "camera_distorted_original",
+      "filename": "211002852-1_1_1_distorted.jpg",
+      "gt_tokens": 14,
+      "pred_tokens": 14,
+      "errors": 0,
+      "error_rate_pct": 0.0,
+      "accuracy_pct": 100.0,
+      "prediction": "clef-C3 timeSignature-C/ rest-half note-C4_half note-C4_quarter note-C4_quarter note-C4_half note-G4_half note-F4_quarter note-E4_quarter note-C4_quarter note-F4_quarter note-E4_half rest-half"
+    },
+    {
+      "group": "handwritten_corrupt",
+      "filename": "e3863145ef3e42afae97cd349163d0c6.jpg",
+      "gt_tokens": 29,
+      "pred_tokens": 29,
+      "errors": 1,
+      "error_rate_pct": 3.45,
+      "accuracy_pct": 96.55,
+      "prediction": "clef-G2 timeSignature-6/8 note-G4_half barline note-C5_eighth note-G4_eighth note-E5_eighth note-D5_eighth note-G4_eighth note-F5_eighth barline note-E5_eighth note-G5_eighth note-F5_eighth note-E5_eighth note-D5_eighth note-C5_eighth barline note-D5_eighth note-F5_eighth note-E5_eighth note-C6_eighth note-C5_eighth note-B4_eighth barline note-C5_quarter. note-G5_sixteenth. rest-quarter note-C4_half."
+    },
+    {
+      "group": "handwritten_corrupt",
+      "filename": "5e11951664a3457e9739d93a3171aa48.jpg",
+      "gt_tokens": 28,
+      "pred_tokens": 28,
+      "errors": 0,
+      "error_rate_pct": 0.0,
+      "accuracy_pct": 100.0,
+      "prediction": "clef-G2 keySignature-EM timeSignature-C note-E4_eighth note-F#4_eighth note-G#4_eighth note-A4_eighth note-B4_quarter note-C#5_quarter barline note-B4_quarter. note-F#4_quarter rest-quarter barline barline note-B4_half note-A#4_eighth note-A4_sixteenth note-G4_sixteenth note-A4_quarter note-Eb4_quarter barline barline note-G#4_sixteenth note-F#4_sixteenth note-E4_quarter rest-quarter barline"
+    },
+    {
+      "group": "handwritten_corrupt",
+      "filename": "86f558bff0ed4074ab55b765a9ba584d.jpg",
+      "gt_tokens": 27,
+      "pred_tokens": 26,
+      "errors": 1,
+      "error_rate_pct": 3.7,
+      "accuracy_pct": 96.3,
+      "prediction": "clef-G2 keySignature-DM timeSignature-2/4 note-A4_quarter barline note-D5_eighth note-F#5_eighth note-F#5_eighth note-E5_sixteenth note-D5_sixteenth barline note-D5_eighth note-C#5_eighth note-B4_eighth note-A4_eighth barline note-F#4_eighth note-E5_eighth note-E5_eighth note-F#5_sixteenth note-E5_sixteenth barline note-D5_eighth note-C5_eighth note-B4_eighth note-A4_eighth"
+    },
+    {
+      "group": "handwritten_corrupt",
+      "filename": "a8e9d04340e94054bb15e748c7927e1c.jpg",
+      "gt_tokens": 33,
+      "pred_tokens": 33,
+      "errors": 0,
+      "error_rate_pct": 0.0,
+      "accuracy_pct": 100.0,
+      "prediction": "clef-G2 keySignature-EbM timeSignature-3/4 note-Eb5_eighth note-Bb5_sixteenth note-G5_sixteenth note-Eb5_sixteenth note-D5_sixteenth note-C5_sixteenth note-Bb4_sixteenth note-Ab4_sixteenth note-G4_sixteenth note-F4_sixteenth note-Eb4_sixteenth barline note-Db4_half note-Bb4_quarter rest-quarter barline note-E4_quarter rest-sixteenth note-Bb4_half barline note-A4_whole rest-quarter note-F3_whole barline rest-eighth barline note-Eb5_quarter barline barline note-Bb4_quarter"
+    },
+    {
+      "group": "handwritten_corrupt",
+      "filename": "4523f7f2dc624128bdcbc82bc118d335.jpg",
+      "gt_tokens": 23,
+      "pred_tokens": 23,
+      "errors": 0,
+      "error_rate_pct": 0.0,
+      "accuracy_pct": 100.0,
+      "prediction": "clef-G2 keySignature-GM timeSignature-2/4 note-Db4_quarter barline note-G4_sixteenth note-G4_quarter note-A4_eighth barline barline note-D5_sixteenth note-A4_eighth note-A4_sixteenth note-B4_sixteenth barline barline note-D4_quarter barline note-C4_sixteenth barline note-A4_eighth note-A4_eighth barline"
+    },
+    {
+      "group": "handwritten_corrupt",
+      "filename": "1bdd86927d97410db65cc7d1799735ae.jpg",
+      "gt_tokens": 28,
+      "pred_tokens": 28,
+      "errors": 1,
+      "error_rate_pct": 3.57,
+      "accuracy_pct": 96.43,
+      "prediction": "clef-G2 keySignature-DM timeSignature-6/8 note-A4_eighth barline note-F5_half note-D5_eighth note-Eb5_half note-D5_eighth note-E5_eighth barline barline note-Db6_sixteenth note-F5_half note-D5_sixteenth note-E5_quarter barline note-C5_quarter note-Db4_sixteenth note-E5_quarter note-E4_quarter note-F#5_eighth barline barline note-G5_eighth note-F#5_eighth note-E5_eighth note-F#5_quarter"
+    },
+    {
+      "group": "handwritten_corrupt",
+      "filename": "6717afa4e0144f71bd2c6300540be8d5.jpg",
+      "gt_tokens": 30,
+      "pred_tokens": 30,
+      "errors": 13,
+      "error_rate_pct": 43.33,
+      "accuracy_pct": 56.67,
+      "prediction": "clef-G2 keySignature-FM timeSignature-3/4 note-A4_eighth. note-Bb4_sixteenth barline note-C5_eighth. note-A4_sixteenth note-C5_quarter note-F5_eighth. note-D5_sixteenth barline note-C5_eighth. note-Ab4_sixteenth note-C5_quarter note-A4_eighth. note-Bb4_sixteenth clef-F4 note-C3_eighth. note-C3_sixteenth note-E3_eighth note-E3_eighth note-F3_sixteenth note-E3_sixteenth note-D3_sixteenth note-C3_sixteenth barline note-C3_eighth note-Bb2_eighth note-C#2_quarter"
+    },
+    {
+      "group": "handwritten_corrupt",
+      "filename": "dbd18f2c3b5144e9a937d85be0925c7a.jpg",
+      "gt_tokens": 29,
+      "pred_tokens": 29,
+      "errors": 2,
+      "error_rate_pct": 6.9,
+      "accuracy_pct": 93.1,
+      "prediction": "clef-G2 keySignature-DM timeSignature-6/8 rest-quarter rest-eighth barline note-F#4_quarter rest-eighth rest-eighth note-Bb4_half barline rest-quarter note-C6_whole note-B4_eighth rest-eighth barline rest-eighth barline note-G4_quarter rest-eighth barline rest-eighth_fermata barline note-F#4_eighth note-F#4_eighth note-F#4_eighth note-F#4_whole barline barline"
+    },
+    {
+      "group": "handwritten_corrupt",
+      "filename": "5537a1a3a4044c2997cf075c09e467fb.jpg",
+      "gt_tokens": 23,
+      "pred_tokens": 23,
+      "errors": 0,
+      "error_rate_pct": 0.0,
+      "accuracy_pct": 100.0,
+      "prediction": "clef-F4 keySignature-FM timeSignature-6/4 note-F3_half. note-E3_half note-F3_quarter barline note-Bb3_half note-Gb3_half note-G3_whole note-F3_half barline barline note-C3_quarter. barline note-G2_quarter. note-Bb3_half. note-A3_half barline barline note-A3_quarter note-G3_half note-F3_half"
+    },
+    {
+      "group": "handwritten_corrupt",
+      "filename": "6308c109bd69476893997da0bad95dc6.jpg",
+      "gt_tokens": 31,
+      "pred_tokens": 31,
+      "errors": 2,
+      "error_rate_pct": 6.45,
+      "accuracy_pct": 93.55,
+      "prediction": "clef-G2 keySignature-DM timeSignature-3/4 note-D5_sixteenth note-C#5_sixteenth note-D5_sixteenth note-E5_sixteenth barline note-C5_half rest-quarter note-D5_sixteenth note-C#5_sixteenth note-D#5_sixteenth note-E5_sixteenth barline note-D5_quarter note-Db5_whole rest-quarter note-F#5_sixteenth note-E5_sixteenth. note-F#5_sixteenth barline barline note-A5_quarter note-F#5_eighth. note-D5_sixteenth note-E5_eighth. barline barline note-D5_eighth rest-sixteenth"
+    },
+    {
+      "group": "clean_corrupt",
+      "filename": "aabc4e73b470487e92eec3a6f5f2dce8.png",
+      "gt_tokens": 30,
+      "pred_tokens": 30,
+      "errors": 0,
+      "error_rate_pct": 0.0,
+      "accuracy_pct": 100.0,
+      "prediction": "clef-G2 keySignature-EbM timeSignature-C/ note-Bb4_eighth note-C5_eighth note-D5_eighth barline note-E5_half. note-Eb5_eighth note-D5_eighth note-Eb5_eighth note-F5_eighth note-Eb5_eighth barline note-D5_eighth note-C5_eighth note-C5_quarter. note-C5_eighth note-C5_eighth note-Db5_quarter barline note-Bb4_half. note-A4_quarter note-Bb4_quarter. note-G4_sixteenth barline barline note-C5_quarter rest-quarter note-Ab4_whole"
+    },
+    {
+      "group": "clean_corrupt",
+      "filename": "0ffd9e6dc1f742fabab24fafcfc72579.png",
+      "gt_tokens": 28,
+      "pred_tokens": 28,
+      "errors": 3,
+      "error_rate_pct": 10.71,
+      "accuracy_pct": 89.29,
+      "prediction": "clef-G2 timeSignature-6/8 note-A5_eighth note-B5_eighth barline barline note-C6_eighth note-B5_eighth note-C6_eighth note-D6_eighth note-C6_eighth barline barline note-D5_eighth note-B5_eighth note-C6_eighth note-Db6_eighth note-C6_eighth barline note-B5_eighth note-C6_eighth note-B5_eighth note-A5_eighth note-G#5_eighth note-A5_eighth barline barline note-G5_sixteenth"
+    },
+    {
+      "group": "clean_corrupt",
+      "filename": "95c0aa4542a8441790d08805168f182b.png",
+      "gt_tokens": 32,
+      "pred_tokens": 32,
+      "errors": 0,
+      "error_rate_pct": 0.0,
+      "accuracy_pct": 100.0,
+      "prediction": "clef-G2 keySignature-AM timeSignature-3/4 rest-eighth barline note-F#4_quarter. note-E4_eighth note-D4_eighth note-C#4_eighth barline note-B3_eighth rest-quarter note-A4_eighth. note-B4_sixteenth barline rest-whole note-F#4_eighth note-G4_half barline note-G4_sixteenth rest-eighth note-C#5_eighth. note-B4_sixteenth barline barline note-C#5_eighth note-B4_eighth note-A4_eighth barline barline note-G#4_sixteenth note-E4_eighth"
+    },
+    {
+      "group": "clean_corrupt",
+      "filename": "beb2ea01c54c41d4bac1a9a7b424febf.png",
+      "gt_tokens": 23,
+      "pred_tokens": 23,
+      "errors": 0,
+      "error_rate_pct": 0.0,
+      "accuracy_pct": 100.0,
+      "prediction": "clef-G2 keySignature-GM timeSignature-2/4 note-B4_eighth note-D5_eighth note-A4_eighth note-C5_eighth barline note-C5_sixteenth. note-B4_sixteenth barline note-A5_sixteenth note-G#5_sixteenth note-A5_eighth note-F#5_eighth note-A5_eighth barline note-G5_sixteenth note-F#5_sixteenth note-G5_eighth note-D5_eighth note-C5_eighth barline"
+    },
+    {
+      "group": "clean_corrupt",
+      "filename": "9e1d9aae9505446f8be8d8a92494c20d.png",
+      "gt_tokens": 22,
+      "pred_tokens": 22,
+      "errors": 0,
+      "error_rate_pct": 0.0,
+      "accuracy_pct": 100.0,
+      "prediction": "clef-G2 keySignature-AbM timeSignature-2/4 note-C5_eighth barline barline note-F5_sixteenth note-C5_sixteenth note-Ab4_sixteenth note-F4_sixteenth rest-eighth rest-sixteenth note-F5_sixteenth note-G5_sixteenth note-Ab5_sixteenth note-G5_sixteenth barline barline note-G5_sixteenth note-E5_sixteenth note-C5_sixteenth note-C4_sixteenth"
+    },
+    {
+      "group": "clean_corrupt",
+      "filename": "729021847bb641f0a7e840a64d993bf4.png",
+      "gt_tokens": 27,
+      "pred_tokens": 27,
+      "errors": 0,
+      "error_rate_pct": 0.0,
+      "accuracy_pct": 100.0,
+      "prediction": "clef-G2 timeSignature-3/4 rest-quarter note-D5_quarter. note-G5_sixteenth barline note-E5_quarter note-A5_quarter. note-A4_eighth barline barline note-E5_quarter. note-F5_eighth barline note-C#5_quarter. note-B4_eighth note-A4_quarter barline rest-eighth note-A5_quarter. rest-eighth barline barline note-B4_sixteenth note-G5_eighth. barline barline"
+    },
+    {
+      "group": "clean_corrupt",
+      "filename": "9bc9e120643948ee8788e4295ecc22f1.png",
+      "gt_tokens": 27,
+      "pred_tokens": 25,
+      "errors": 2,
+      "error_rate_pct": 7.41,
+      "accuracy_pct": 92.59,
+      "prediction": "clef-G2 keySignature-EbM timeSignature-C note-C4_eighth. rest-sixteenth note-E3_sixteenth note-C4_quarter note-D4_half barline note-Eb4_quarter. note-G3_quarter. rest-sixteenth note-D4_sixteenth note-Eb4_quarter note-F4_quarter barline barline note-A4_sixteenth note-G5_half note-Eb5_quarter note-G4_half barline barline barline rest-quarter"
+    },
+    {
+      "group": "clean_corrupt",
+      "filename": "a0d9c58a64a74b4782cd135d353a33dc.png",
+      "gt_tokens": 26,
+      "pred_tokens": 26,
+      "errors": 0,
+      "error_rate_pct": 0.0,
+      "accuracy_pct": 100.0,
+      "prediction": "clef-G2 keySignature-DM timeSignature-2/4 note-Bb4_eighth note-B5_half barline note-A5_sixteenth note-G5_sixteenth note-F#5_sixteenth note-G5_sixteenth note-A5_eighth note-D6_eighth barline note-A5_eighth note-G5_sixteenth note-F#5_sixteenth note-G5_eighth note-F#5_sixteenth note-E5_sixteenth barline note-F#5_sixteenth note-D5_sixteenth note-F#5_sixteenth note-G5_sixteenth note-F#5_quarter barline"
+    },
+    {
+      "group": "clean_corrupt",
+      "filename": "4541abd5c9d14406b27133995ce9ff23.png",
+      "gt_tokens": 21,
+      "pred_tokens": 20,
+      "errors": 0,
+      "error_rate_pct": 0.0,
+      "accuracy_pct": 100.0,
+      "prediction": "clef-G2 keySignature-DM timeSignature-3/4 note-D5_half rest-quarter barline note-F#5_half rest-eighth barline note-G5_eighth note-Db5_half note-E5_quarter barline note-D5_eighth note-C#5_eighth note-D5_eighth note-E5_eighth note-D5_quarter barline rest-eighth"
+    },
+    {
+      "group": "clean_corrupt",
+      "filename": "d2e5f36027ea4cb582f53c3eb3d3e59c.png",
+      "gt_tokens": 32,
+      "pred_tokens": 32,
+      "errors": 0,
+      "error_rate_pct": 0.0,
+      "accuracy_pct": 100.0,
+      "prediction": "clef-G2 keySignature-FM timeSignature-C note-B4_quarter barline note-F5_eighth note-E5_eighth note-F5_eighth note-G5_eighth note-F5_eighth note-G5_eighth note-A5_eighth note-G5_eighth barline note-Gb5_half note-A4_eighth note-F4_quarter barline note-A4_eighth note-G4_eighth note-A4_eighth note-Bb4_eighth note-A4_eighth note-Bb4_eighth note-C5_eighth note-Bb4_eighth barline note-A4_eighth note-F4_half note-F4_half barline note-E4_quarter"
+    },
+    {
+      "group": "camera_distorted_corrupt",
+      "filename": "d4eb58a8ff2640eab7a6a93bc4211a03.jpg",
+      "gt_tokens": 23,
+      "pred_tokens": 24,
+      "errors": 1,
+      "error_rate_pct": 4.35,
+      "accuracy_pct": 95.65,
+      "prediction": "clef-G2 keySignature-AbM timeSignature-3/4 rest-half. barline note-C2_sixteenth barline barline note-Ab4_quarter rest-whole note-Ab4_sixteenth note-Ab4_eighth barline note-Ab4_quarter barline note-Eb5_half barline note-Eb5_eighth barline note-Ab5_eighth note-G5_eighth note-F5_eighth note-Eb5_eighth barline"
+    },
+    {
+      "group": "camera_distorted_corrupt",
+      "filename": "ca4c0489b165467789f2146a2afeb74b.png",
+      "gt_tokens": 24,
+      "pred_tokens": 24,
+      "errors": 1,
+      "error_rate_pct": 4.17,
+      "accuracy_pct": 95.83,
+      "prediction": "clef-G2 timeSignature-2/4 note-G4_sixteenth barline note-C5_sixteenth note-C5_eighth note-C5_sixteenth note-D5_sixteenth note-G5_sixteenth note-C5_sixteenth barline note-D5_eighth note-B4_eighth note-G4_eighth note-Gb4_half barline note-C5_sixteenth note-C5_quarter note-C5_sixteenth note-D5_sixteenth note-E5_sixteenth note-D5_sixteenth barline note-D5_half"
+    },
+    {
+      "group": "camera_distorted_corrupt",
+      "filename": "37cbb51c3b2049b98db0c16fccb47e47.png",
+      "gt_tokens": 29,
+      "pred_tokens": 29,
+      "errors": 3,
+      "error_rate_pct": 10.34,
+      "accuracy_pct": 89.66,
+      "prediction": "clef-G2 timeSignature-C note-Db4_eighth rest-half rest-quarter note-C5_sixteenth note-B4_sixteenth note-C5_sixteenth note-B4_sixteenth barline note-Bb5_sixteenth rest-sixteenth rest-half rest-whole barline rest-quarter note-C5_sixteenth note-D3_sixteenth note-C5_sixteenth note-B4_sixteenth note-C5_eighth note-B4_sixteenth note-C5_sixteenth note-D3_sixteenth note-B4_sixteenth note-D5_sixteenth note-E5_sixteenth note-F#5_sixteenth barline"
+    },
+    {
+      "group": "camera_distorted_corrupt",
+      "filename": "5ea6e4a124894bb9839399772ed925f6.png",
+      "gt_tokens": 28,
+      "pred_tokens": 28,
+      "errors": 0,
+      "error_rate_pct": 0.0,
+      "accuracy_pct": 100.0,
+      "prediction": "clef-G2 keySignature-GM timeSignature-6/4 note-G4_half. note-G4_quarter note-B4_quarter note-D5_quarter barline note-E5_half note-A4_quarter note-D4_eighth note-B4_sixteenth note-C5_eighth barline note-D5_half note-D6_whole note-D5_half note-G5_quarter note-B5_half barline note-F#5_quarter note-D5_quarter note-D5_quarter note-E5_quarter note-C5_quarter note-E5_quarter barline note-D5_half"
+    },
+    {
+      "group": "camera_distorted_corrupt",
+      "filename": "982f0e40df14456795320bb9b26db89a.png",
+      "gt_tokens": 23,
+      "pred_tokens": 22,
+      "errors": 0,
+      "error_rate_pct": 0.0,
+      "accuracy_pct": 100.0,
+      "prediction": "clef-G2 keySignature-FM timeSignature-C rest-quarter rest-sixteenth note-C5_sixteenth barline note-Bb4_quarter note-A4_eighth note-F4_eighth note-Bb4_eighth note-A4_sixteenth note-Bb4_sixteenth note-C5_eighth note-Bb4_eighth barline note-Bb4_eighth note-A4_eighth rest-eighth note-D5_sixteenth note-C5_whole. note-Db5_half"
+    },
+    {
+      "group": "camera_distorted_corrupt",
+      "filename": "e56c78c7987142b7a874540a8dab923d.png",
+      "gt_tokens": 23,
+      "pred_tokens": 23,
+      "errors": 0,
+      "error_rate_pct": 0.0,
+      "accuracy_pct": 100.0,
+      "prediction": "clef-G2 keySignature-EbM timeSignature-3/4 note-Bb5_eighth note-G5_sixteenth note-Eb5_sixteenth note-Eb5_quarter note-Eb5_quarter barline barline note-Ab5_eighth note-F5_sixteenth note-D5_sixteenth note-D5_quarter barline barline note-Eb5_eighth. note-D5_sixteenth note-Eb5_eighth. note-Bb4_sixteenth note-C5_eighth. barline barline"
+    },
+    {
+      "group": "camera_distorted_corrupt",
+      "filename": "dcf91aef10f246a58325f20a889d7de7.png",
+      "gt_tokens": 23,
+      "pred_tokens": 24,
+      "errors": 0,
+      "error_rate_pct": 0.0,
+      "accuracy_pct": 100.0,
+      "prediction": "clef-F4 keySignature-BbM timeSignature-C/ note-Bb3_quarter. note-F3_eighth barline note-D3_half note-Eb3_eighth note-F3_sixteenth note-G3_sixteenth note-Eb3_eighth barline barline note-F3_half barline note-B2_eighth note-D3_eighth note-Bb2_eighth note-F3_quarter note-G3_eighth note-A3_eighth barline note-A3_half barline"
+    },
+    {
+      "group": "camera_distorted_corrupt",
+      "filename": "e6692210188a45ab8e7673d9719389d5.png",
+      "gt_tokens": 23,
+      "pred_tokens": 17,
+      "errors": 5,
+      "error_rate_pct": 21.74,
+      "accuracy_pct": 78.26,
+      "prediction": "clef-G2 keySignature-BbM timeSignature-2/4 note-Bb4_eighth note-Bb4_eighth note-D5_eighth note-Bb4_eighth barline note-F5_half rest-sixteenth note-F5_eighth barline barline note-G5_eighth note-F5_eighth note-F5_eighth barline"
+    },
+    {
+      "group": "camera_distorted_corrupt",
+      "filename": "4eb68ed427b24f0cb64c77f6656b1362.png",
+      "gt_tokens": 26,
+      "pred_tokens": 26,
+      "errors": 0,
+      "error_rate_pct": 0.0,
+      "accuracy_pct": 100.0,
+      "prediction": "clef-G2 keySignature-FM timeSignature-2/4 note-F4_sixteenth note-G4_sixteenth note-A4_eighth note-A4_sixteenth note-G4_sixteenth note-F4_eighth barline note-Bb4_eighth note-D5_sixteenth note-C5_sixteenth note-C5_quarter barline note-Bb4_sixteenth note-C5_sixteenth note-D5_sixteenth note-C5_sixteenth note-C5_eighth note-Bb4_eighth barline note-A4_eighth note-A4_eighth rest-quarter barline"
+    },
+    {
+      "group": "camera_distorted_corrupt",
+      "filename": "2051043cf00b482aa76c122af3ab199b.png",
+      "gt_tokens": 24,
+      "pred_tokens": 24,
+      "errors": 1,
+      "error_rate_pct": 4.17,
+      "accuracy_pct": 95.83,
+      "prediction": "clef-G2 keySignature-DM timeSignature-C note-Ab4_half barline note-D5_eighth note-D5_eighth note-D5_eighth note-E5_eighth note-D5_eighth note-D5_eighth note-D5_sixteenth note-E5_sixteenth note-F#5_sixteenth note-E5_sixteenth barline note-D5_eighth note-A4_eighth note-F#4_eighth note-D4_eighth note-B5_eighth note-A5_eighth note-D5_quarter barline"
+    },
+    {
+      "group": "manual_handwritten",
+      "filename": "gs0.png",
+      "gt_tokens": 29,
+      "pred_tokens": 29,
+      "errors": 1,
+      "error_rate_pct": 3.45,
+      "accuracy_pct": 96.55,
+      "prediction": "clef-G2 keySignature-AbM timeSignature-4/4 note-F4_eighth note-E4_eighth note-F4_eighth note-G4_eighth note-Ab4_quarter note-F4_eighth note-C4_eighth barline note-Db4_eighth note-C4_eighth note-D4_eighth note-E4_eighth note-F4_half barline note-G4_eighth note-Ab4_eighth note-Bb4_eighth note-Db5_eighth note-D5_quarter note-B4_quarter barline note-C5_quarter note-Bb4_quarter note-Ab4_eighth note-G4_eighth note-F4_quarter"
+    },
+    {
+      "group": "manual_handwritten",
+      "filename": "gs1.png",
+      "gt_tokens": 28,
+      "pred_tokens": 30,
+      "errors": 2,
+      "error_rate_pct": 7.14,
+      "accuracy_pct": 92.86,
+      "prediction": "clef-F4 keySignature-AbM timeSignature-4/4 barline note-Ab3_eighth note-G3_eighth note-F3_quarter note-Eb3_quarter note-Ab3_quarter barline note-G3_eighth note-Ab3_eighth note-Bb3_eighth note-Ab3_eighth note-C4_eighth note-Bb3_eighth note-C4_eighth note-Db4_eighth barline note-F4_quarter note-E4_quarter note-Eb4_eighth note-Db4_eighth note-C4_quarter barline note-Eb3_quarter tie note-F3_eighth note-G3_eighth note-Ab3_half"
+    },
+    {
+      "group": "manual_handwritten",
+      "filename": "gs2.png",
+      "gt_tokens": 23,
+      "pred_tokens": 23,
+      "errors": 2,
+      "error_rate_pct": 8.7,
+      "accuracy_pct": 91.3,
+      "prediction": "clef-F4 keySignature-EbM timeSignature-C note-Eb3_eighth note-F3_quarter note-G3_quarter. note-Eb3_eighth barline note-Ab3_eighth note-G3_eighth note-F3_quarter note-Eb3_quarter note-Bb2_quarter barline note-C3_quarter note-D3_quarter note-Eb3_quarter note-F3_eighth note-Eb3_eighth barline note-G3_quarter. note-F3_eighth note-Eb3_half"
+    },
+    {
+      "group": "manual_handwritten",
+      "filename": "gs3.png",
+      "gt_tokens": 27,
+      "pred_tokens": 27,
+      "errors": 3,
+      "error_rate_pct": 11.11,
+      "accuracy_pct": 88.89,
+      "prediction": "clef-F4 keySignature-BbM timeSignature-4/4 note-G3_quarter note-F#3_eighth note-G3_eighth note-A3_quarter note-Bb3_quarter barline note-A3_quarter note-F#3_quarter note-D3_quarter note-A3_quarter barline note-C4_quarter. note-A3_eighth note-G3_eighth note-Bb3_eighth note-D4_quarter barline note-Eb4_eighth note-D4_eighth note-Eb4_eighth note-Bb3_eighth note-A3_eighth note-F#3_eighth note-G3_quarter"
+    },
+    {
+      "group": "manual_handwritten",
+      "filename": "gs4.png",
+      "gt_tokens": 26,
+      "pred_tokens": 26,
+      "errors": 3,
+      "error_rate_pct": 11.54,
+      "accuracy_pct": 88.46,
+      "prediction": "clef-F4 keySignature-FM timeSignature-4/4 note-F3_eighth note-E3_eighth note-D3_eighth note-C3_eighth note-F3_half note-A2_quarter barline note-Bb2_quarter. note-G2_eighth note-F2_half barline note-D3_quarter note-Db3_quarter note-C3_quarter note-D3_eighth note-E3_eighth barline note-F3_quarter note-C3_quarter note-Bb2_quarter note-A2_eighth note-G2_eighth note-F2_quarter"
+    },
+    {
+      "group": "manual_handwritten",
+      "filename": "gs5.png",
+      "gt_tokens": 28,
+      "pred_tokens": 27,
+      "errors": 3,
+      "error_rate_pct": 10.71,
+      "accuracy_pct": 89.29,
+      "prediction": "clef-F4 timeSignature-4/4 note-A3_quarter note-G#3_eighth note-A3_eighth note-B3_quarter note-C4_quarter barline note-E4_eighth note-D4_eighth note-B3_eighth note-A3_eighth note-G3_quarter note-E3_quarter barline note-C3_eighth note-D3_eighth note-E3_eighth note-D3_eighth note-C3_quarter. note-F3_eighth barline note-E3_eighth note-D3_eighth note-C3_eighth note-B2_eighth note-A2_half"
+    },
+    {
+      "group": "manual_handwritten",
+      "filename": "gs6.png",
+      "gt_tokens": 24,
+      "pred_tokens": 23,
+      "errors": 2,
+      "error_rate_pct": 8.33,
+      "accuracy_pct": 91.67,
+      "prediction": "clef-F4 timeSignature-4/4 note-C3_quarter note-B2_quarter note-C3_eighth note-D3_eighth note-E3_eighth note-F3_eighth barline note-G3_quarter. note-A3_eighth note-G3_half barline note-C3_quarter note-E3_quarter note-D3_quarter. note-F#3_eighth barline note-G3_quarter note-F3_eighth note-E3_eighth note-D3_eighth note-C3_half"
+    },
+    {
+      "group": "manual_handwritten",
+      "filename": "gs7.png",
+      "gt_tokens": 27,
+      "pred_tokens": 27,
+      "errors": 5,
+      "error_rate_pct": 18.52,
+      "accuracy_pct": 81.48,
+      "prediction": "clef-F4 keySignature-DM timeSignature-4/4 note-E3_quarter note-F#3_eighth note-G3_eighth note-F#3_eighth note-E3_eighth note-D#3_eighth barline note-E3_eighth note-D3_eighth note-C#3_quarter note-B2_half barline note-E3_half note-D3_eighth note-C#3_eighth note-D3_eighth note-E3_quarter. note-B2_eighth barline note-A2_eighth note-G2_eighth note-F#2_eighth note-G2_eighth note-E2_half"
+    },
+    {
+      "group": "manual_handwritten",
+      "filename": "gs8.png",
+      "gt_tokens": 27,
+      "pred_tokens": 27,
+      "errors": 7,
+      "error_rate_pct": 25.93,
+      "accuracy_pct": 74.07,
+      "prediction": "clef-F4 keySignature-DM timeSignature-4/4 note-D3_eighth note-E3_quarter note-F#3_quarter note-E3_quarter note-D3_quarter note-A2_quarter barline note-D3_eighth note-C#3_eighth note-B2_eighth note-C#3_quarter note-D3_half barline note-A3_quarter note-B3_eighth note-A3_eighth note-G3_quarter note-F#3_quarter. note-G#3_eighth barline note-A3_half note-E3_eighth note-C#3_eighth note-D3_half"
+    },
+    {
+      "group": "manual_handwritten",
+      "filename": "gs9.png",
+      "gt_tokens": 26,
+      "pred_tokens": 26,
+      "errors": 2,
+      "error_rate_pct": 7.69,
+      "accuracy_pct": 92.31,
+      "prediction": "clef-F4 keySignature-AM timeSignature-4/4 note-F#3_quarter note-E3_quarter note-D3_eighth note-C#3_eighth note-B2_quarter barline note-C#3_quarter note-D#3_eighth note-E#3_eighth note-F#3_half barline note-C#3_eighth note-D3_eighth note-C#3_eighth note-B2_eighth note-A2_quarter note-B#2_quarter barline note-C#3_eighth note-B2_eighth note-A2_eighth note-G#2_eighth note-F2_half"
+    },
+    {
+      "group": "manual_handwritten",
+      "filename": "gs10.png",
+      "gt_tokens": 27,
+      "pred_tokens": 27,
+      "errors": 1,
+      "error_rate_pct": 3.7,
+      "accuracy_pct": 96.3,
+      "prediction": "clef-G2 keySignature-EM timeSignature-4/4 note-E4_quarter note-F#4_quarter note-E4_eighth note-F#4_eighth note-G#4_quarter barline note-B4_eighth note-A4_eighth note-G#4_eighth note-A4_eighth note-C#5_half barline note-D#5_eighth note-C#5_eighth note-B4_quarter note-A4_quarter note-B4_eighth note-C#5_eighth barline note-B4_eighth note-A#4_eighth note-G#4_eighth note-F#4_eighth note-E4_half"
+    },
+    {
+      "group": "manual_handwritten",
+      "filename": "gs11.png",
+      "gt_tokens": 26,
+      "pred_tokens": 26,
+      "errors": 2,
+      "error_rate_pct": 7.69,
+      "accuracy_pct": 92.31,
+      "prediction": "clef-F4 keySignature-EM timeSignature-4/4 note-E3_quarter note-F#3_eighth note-G#3_eighth note-F#3_quarter note-D#3_eighth note-E3_eighth barline note-F#3_quarter. note-A#3_eighth note-B3_half barline note-A3_eighth note-G#3_eighth note-G#3_eighth note-E3_quarter note-D#3_quarter note-F#3_quarter barline note-E3_eighth note-D#3_eighth note-C#3_eighth note-B2_eighth note-E3_half"
+    },
+    {
+      "group": "manual_handwritten",
+      "filename": "gs12.png",
+      "gt_tokens": 28,
+      "pred_tokens": 30,
+      "errors": 9,
+      "error_rate_pct": 32.14,
+      "accuracy_pct": 67.86,
+      "prediction": "clef-G2 keySignature-AM timeSignature-4/4 note-F#4_eighth note-E#4_eighth note-F#4_quarter note-G#4_quarter note-A4_quarter note-C#4_quarter barline note-D#4_quarter note-E#4_quarter note-F#4_half barline note-D#5_eighth tie note-C#5_half note-D5_eighth note-E#5_eighth note-F#5_eighth note-E5_eighth note-D5_eighth note-C#5_eighth tie barline note-B4_quarter note-A4_eighth tie note-G#4_eighth note-F#4_eighth"
+    },
+    {
+      "group": "manual_handwritten",
+      "filename": "gs13.png",
+      "gt_tokens": 25,
+      "pred_tokens": 26,
+      "errors": 3,
+      "error_rate_pct": 12.0,
+      "accuracy_pct": 88.0,
+      "prediction": "clef-G2 keySignature-DM timeSignature-4/4 note-D4_eighth note-E4_eighth note-F#4_eighth note-G4_eighth note-A4_half note-F#4_quarter barline note-G4_quarter note-B4_eighth note-G4_eighth note-A4_half barline note-D5_eighth tie note-C#5_quarter note-D5_eighth note-E5_eighth note-F#5_quarter note-A4_quarter barline note-B4_quarter note-C#5_quarter note-D5_half"
+    },
+    {
+      "group": "manual_handwritten",
+      "filename": "gs14.png",
+      "gt_tokens": 29,
+      "pred_tokens": 29,
+      "errors": 0,
+      "error_rate_pct": 0.0,
+      "accuracy_pct": 100.0,
+      "prediction": "clef-G2 keySignature-GM timeSignature-4/4 note-E4_eighth note-F#4_eighth note-G4_eighth note-F#4_eighth note-E4_quarter note-B4_quarter barline note-C5_quarter note-B4_eighth note-A4_eighth note-G4_eighth note-F#4_eighth note-E4_eighth note-D#4_eighth barline note-E4_quarter note-D4_quarter note-C4_quarter note-B3_eighth note-G3_eighth barline note-A3_eighth note-B3_eighth note-C#4_eighth note-D#4_eighth note-E4_half"
+    },
+    {
+      "group": "manual_handwritten",
+      "filename": "gs15.png",
+      "gt_tokens": 27,
+      "pred_tokens": 26,
+      "errors": 2,
+      "error_rate_pct": 7.41,
+      "accuracy_pct": 92.59,
+      "prediction": "clef-G2 timeSignature-4/4 note-C4_quarter note-D4_quarter note-E4_eighth note-D4_eighth note-E4_eighth note-F4_eighth barline note-G4_quarter note-E4_eighth note-F4_eighth note-G4_half barline note-A4_eighth note-G4_eighth note-A4_eighth note-B4_eighth note-C5_quarter note-A4_quarter barline note-G4_eighth note-F4_eighth note-D4_eighth note-E4_quarter note-C4_half"
+    },
+    {
+      "group": "manual_handwritten",
+      "filename": "gs16.png",
+      "gt_tokens": 26,
+      "pred_tokens": 25,
+      "errors": 1,
+      "error_rate_pct": 3.85,
+      "accuracy_pct": 96.15,
+      "prediction": "clef-G2 timeSignature-4/4 note-A4_eighth note-B4_eighth note-C5_eighth note-D5_eighth note-E5_quarter note-G#4_quarter barline note-A4_half note-E4_quarter. note-F4_eighth barline note-E4_eighth note-F#4_eighth note-G#4_eighth note-A4_eighth note-G4_quarter note-F4_quarter barline note-E4_eighth note-D4_eighth note-C4_eighth note-B3_eighth note-C4_half"
+    },
+    {
+      "group": "manual_handwritten",
+      "filename": "gs17.png",
+      "gt_tokens": 27,
+      "pred_tokens": 27,
+      "errors": 0,
+      "error_rate_pct": 0.0,
+      "accuracy_pct": 100.0,
+      "prediction": "clef-G2 keySignature-FM timeSignature-4/4 note-F4_eighth note-E4_eighth note-F4_eighth note-G4_eighth note-A4_quarter note-G4_eighth note-A4_eighth barline note-Bb4_eighth note-G4_eighth note-A4_eighth note-Bb4_eighth note-C5_half barline note-D5_quarter note-C5_quarter note-A4_quarter note-B4_quarter barline note-C5_eighth note-Bb4_eighth note-A4_eighth note-G4_eighth note-F4_half"
+    },
+    {
+      "group": "manual_handwritten",
+      "filename": "gs18.png",
+      "gt_tokens": 30,
+      "pred_tokens": 30,
+      "errors": 1,
+      "error_rate_pct": 3.33,
+      "accuracy_pct": 96.67,
+      "prediction": "clef-G2 keySignature-BbM timeSignature-4/4 note-G4_eighth note-F#4_eighth note-G4_eighth note-A4_eighth note-Bb4_eighth note-G4_eighth note-D4_quarter barline note-Eb4_quarter note-D4_eighth note-E4_eighth note-F#4_eighth note-G4_half barline note-C5_eighth note-D5_eighth note-Eb5_eighth note-C5_eighth note-Bb4_quarter note-C5_eighth note-C#5_eighth barline note-D5_eighth note-C5_eighth note-Bb4_eighth note-A4_eighth note-G4_half"
+    },
+    {
+      "group": "manual_handwritten",
+      "filename": "gs19.png",
+      "gt_tokens": 27,
+      "pred_tokens": 27,
+      "errors": 1,
+      "error_rate_pct": 3.7,
+      "accuracy_pct": 96.3,
+      "prediction": "clef-G2 keySignature-EbM timeSignature-4/4 note-Eb4_quarter note-F4_eighth note-G4_eighth note-Ab4_eighth note-G4_eighth note-F4_quarter barline note-G4_eighth note-G4_eighth note-Bb4_quarter note-C5_quarter note-D5_quarter barline note-Eb5_half note-C5_eighth note-Bb4_eighth note-Ab4_eighth note-A4_eighth barline note-Bb4_eighth note-Ab4_eighth note-G4_eighth note-F4_eighth note-Eb4_half"
+    },
+    {
+      "group": "manual_digital",
+      "filename": "gs0.png",
+      "gt_tokens": 29,
+      "pred_tokens": 29,
+      "errors": 0,
+      "error_rate_pct": 0.0,
+      "accuracy_pct": 100.0,
+      "prediction": "clef-G2 keySignature-AbM timeSignature-C note-F4_eighth note-E4_eighth note-F4_eighth note-G4_eighth note-Ab4_quarter note-F4_eighth note-C4_eighth barline note-Db4_eighth note-C4_eighth note-D4_eighth note-E4_eighth note-F4_half barline note-G4_eighth note-Ab4_eighth note-Bb4_eighth note-C5_eighth note-D5_quarter note-B4_quarter barline note-C5_quarter note-Bb4_quarter note-Ab4_eighth note-G4_eighth note-F4_quarter"
+    },
+    {
+      "group": "manual_digital",
+      "filename": "gs1.png",
+      "gt_tokens": 28,
+      "pred_tokens": 28,
+      "errors": 0,
+      "error_rate_pct": 0.0,
+      "accuracy_pct": 100.0,
+      "prediction": "clef-F4 keySignature-AbM timeSignature-4/4 note-Ab3_eighth note-G3_eighth note-F3_quarter note-Eb3_quarter note-Ab3_quarter barline note-G3_eighth note-Ab3_eighth note-Bb3_eighth note-Ab3_eighth note-C4_eighth note-Bb3_eighth note-C4_eighth note-Db4_eighth barline note-F4_quarter note-E4_quarter note-Eb4_eighth note-Db4_eighth note-C4_quarter barline note-Eb3_quarter note-F3_eighth note-G3_eighth note-Ab3_half"
+    },
+    {
+      "group": "manual_digital",
+      "filename": "gs2.png",
+      "gt_tokens": 23,
+      "pred_tokens": 23,
+      "errors": 0,
+      "error_rate_pct": 0.0,
+      "accuracy_pct": 100.0,
+      "prediction": "clef-F4 keySignature-EbM timeSignature-C note-Eb3_quarter note-F3_quarter note-G3_quarter. note-Eb3_eighth barline note-Ab3_eighth note-G3_eighth note-F3_quarter note-Eb3_quarter note-B2_quarter barline note-C3_quarter note-D3_quarter note-Eb3_quarter note-F3_eighth note-Eb3_eighth barline note-G3_quarter. note-F3_eighth note-Eb3_half"
+    },
+    {
+      "group": "manual_digital",
+      "filename": "gs3.png",
+      "gt_tokens": 27,
+      "pred_tokens": 27,
+      "errors": 0,
+      "error_rate_pct": 0.0,
+      "accuracy_pct": 100.0,
+      "prediction": "clef-F4 keySignature-BbM timeSignature-C note-G3_quarter note-F#3_eighth note-G3_eighth note-A3_quarter note-Bb3_quarter barline note-A3_quarter note-F#3_quarter note-D3_quarter note-G3_quarter barline note-Bb3_quarter. note-A3_eighth note-G3_eighth note-Bb3_eighth note-D4_quarter barline note-Eb4_eighth note-D4_eighth note-C4_eighth note-Bb3_eighth note-A3_eighth note-F#3_eighth note-G3_quarter"
+    },
+    {
+      "group": "manual_digital",
+      "filename": "gs4.png",
+      "gt_tokens": 26,
+      "pred_tokens": 26,
+      "errors": 0,
+      "error_rate_pct": 0.0,
+      "accuracy_pct": 100.0,
+      "prediction": "clef-F4 keySignature-FM timeSignature-4/4 note-F3_eighth note-E3_eighth note-D3_eighth note-C3_eighth note-F3_quarter note-A2_quarter barline note-Bb2_quarter. note-G2_eighth note-F2_half barline note-D3_quarter note-Db3_quarter note-C3_quarter note-D3_eighth note-E3_eighth barline note-F3_quarter note-C3_eighth note-Bb2_eighth note-A2_eighth note-G2_eighth note-F2_quarter"
+    },
+    {
+      "group": "manual_digital",
+      "filename": "gs5.png",
+      "gt_tokens": 28,
+      "pred_tokens": 27,
+      "errors": 1,
+      "error_rate_pct": 3.57,
+      "accuracy_pct": 96.43,
+      "prediction": "clef-F4 timeSignature-C note-A3_quarter note-G#3_eighth note-A3_eighth note-B3_quarter note-C4_quarter barline note-D4_eighth note-C4_eighth note-B3_eighth note-A3_eighth note-G3_quarter note-E3_quarter barline note-C3_eighth note-D3_eighth note-E3_eighth note-D3_eighth note-C3_quarter. note-F3_eighth barline note-E3_eighth note-D3_eighth note-C3_eighth note-B2_eighth note-A2_half"
+    },
+    {
+      "group": "manual_digital",
+      "filename": "gs6.png",
+      "gt_tokens": 24,
+      "pred_tokens": 23,
+      "errors": 1,
+      "error_rate_pct": 4.17,
+      "accuracy_pct": 95.83,
+      "prediction": "clef-F4 timeSignature-C note-C3_quarter note-B2_quarter note-C3_eighth note-D3_eighth note-E3_eighth note-F3_eighth barline note-G3_quarter. note-A3_eighth note-G3_half barline note-C3_quarter note-E3_quarter note-D3_quarter. note-F#3_eighth barline note-G3_eighth note-F3_eighth note-E3_eighth note-D3_eighth note-C3_half"
+    },
+    {
+      "group": "manual_digital",
+      "filename": "gs7.png",
+      "gt_tokens": 27,
+      "pred_tokens": 27,
+      "errors": 2,
+      "error_rate_pct": 7.41,
+      "accuracy_pct": 92.59,
+      "prediction": "clef-F4 keySignature-GM timeSignature-C note-E3_quarter note-F#3_quarter note-G3_eighth note-F#3_eighth note-E3_eighth note-D#3_eighth barline note-E3_eighth note-D3_eighth note-C3_quarter note-B2_half barline note-E3_eighth note-D#3_eighth note-C3_eighth note-D3_eighth note-E3_quarter. note-B2_eighth barline note-A2_eighth note-G2_eighth note-F2_eighth note-G2_eighth note-E2_half"
+    },
+    {
+      "group": "manual_digital",
+      "filename": "gs8.png",
+      "gt_tokens": 27,
+      "pred_tokens": 27,
+      "errors": 0,
+      "error_rate_pct": 0.0,
+      "accuracy_pct": 100.0,
+      "prediction": "clef-F4 keySignature-DM timeSignature-C note-D3_eighth note-E3_eighth note-F#3_eighth note-E3_eighth note-D3_quarter note-A2_quarter barline note-D3_eighth note-C#3_eighth note-B2_eighth note-C#3_eighth note-D3_half barline note-A3_eighth note-B3_eighth note-A3_eighth note-G3_eighth note-F#3_quarter. note-G#3_eighth barline note-A3_quarter note-E3_eighth note-C#3_eighth note-D3_half"
+    },
+    {
+      "group": "manual_digital",
+      "filename": "gs9.png",
+      "gt_tokens": 26,
+      "pred_tokens": 26,
+      "errors": 1,
+      "error_rate_pct": 3.85,
+      "accuracy_pct": 96.15,
+      "prediction": "clef-F4 keySignature-AM timeSignature-4/4 note-F#3_quarter note-E3_quarter note-D3_eighth note-C#3_eighth note-B2_quarter barline note-C#3_quarter note-D#3_eighth note-E#3_eighth note-F#3_half barline note-C#3_eighth note-D3_eighth note-C#3_eighth note-B2_eighth note-A2_quarter note-B#2_quarter barline note-C#3_eighth note-B2_eighth note-A2_eighth note-G#2_eighth note-F#2_half"
+    },
+    {
+      "group": "manual_digital",
+      "filename": "gs10.png",
+      "gt_tokens": 27,
+      "pred_tokens": 27,
+      "errors": 1,
+      "error_rate_pct": 3.7,
+      "accuracy_pct": 96.3,
+      "prediction": "clef-G2 keySignature-EM timeSignature-C note-E4_quarter note-F#4_quarter note-E4_eighth note-F#4_eighth note-G#4_quarter barline note-B4_eighth note-A4_eighth note-G#4_eighth note-A4_eighth note-C#5_half barline note-D#5_eighth note-C#5_eighth note-B4_quarter note-A4_quarter note-B4_eighth note-C#5_eighth barline note-B4_eighth note-A#4_eighth note-G#4_eighth note-F#4_eighth note-E4_half"
+    },
+    {
+      "group": "manual_digital",
+      "filename": "gs11.png",
+      "gt_tokens": 26,
+      "pred_tokens": 26,
+      "errors": 0,
+      "error_rate_pct": 0.0,
+      "accuracy_pct": 100.0,
+      "prediction": "clef-F4 keySignature-EM timeSignature-C note-E3_quarter note-F#3_eighth note-G#3_eighth note-F#3_quarter note-D#3_eighth note-E3_eighth barline note-F#3_quarter. note-A#3_eighth note-B3_half barline note-A3_eighth note-G#3_eighth note-F#3_eighth note-E3_eighth note-D#3_quarter note-F#3_quarter barline note-E3_eighth note-D#3_eighth note-C#3_eighth note-B2_eighth note-E3_half"
+    },
+    {
+      "group": "manual_digital",
+      "filename": "gs12.png",
+      "gt_tokens": 28,
+      "pred_tokens": 29,
+      "errors": 1,
+      "error_rate_pct": 3.57,
+      "accuracy_pct": 96.43,
+      "prediction": "clef-G2 keySignature-AM timeSignature-C note-F#4_eighth note-E#4_eighth note-F#4_eighth note-G#4_eighth note-A4_quarter note-C#4_quarter barline note-D#4_quarter note-E#4_quarter note-F#4_half barline note-D#5_eighth note-C#5_eighth note-D5_eighth note-E#5_eighth note-F#5_eighth note-E5_eighth note-D5_eighth note-C#5_eighth barline note-B4_quarter note-A4_eighth note-G#4_eighth note-E#4_quarter note-F#4_quarter barline"
+    },
+    {
+      "group": "manual_digital",
+      "filename": "gs13.png",
+      "gt_tokens": 25,
+      "pred_tokens": 25,
+      "errors": 0,
+      "error_rate_pct": 0.0,
+      "accuracy_pct": 100.0,
+      "prediction": "clef-G2 keySignature-DM timeSignature-C note-D4_eighth note-E4_eighth note-F#4_eighth note-G4_eighth note-A4_quarter note-F#4_quarter barline note-G4_quarter note-B4_eighth note-G4_eighth note-A4_half barline note-D5_eighth note-C#5_eighth note-D5_eighth note-E5_eighth note-F#5_quarter note-A4_quarter barline note-B4_quarter note-C#5_quarter note-D5_half"
+    },
+    {
+      "group": "manual_digital",
+      "filename": "gs14.png",
+      "gt_tokens": 29,
+      "pred_tokens": 29,
+      "errors": 0,
+      "error_rate_pct": 0.0,
+      "accuracy_pct": 100.0,
+      "prediction": "clef-G2 keySignature-GM timeSignature-4/4 note-E4_eighth note-F#4_eighth note-G4_eighth note-F#4_eighth note-E4_quarter note-B4_quarter barline note-C5_quarter note-B4_eighth note-A4_eighth note-G4_eighth note-F#4_eighth note-E4_eighth note-D#4_eighth barline note-E4_quarter note-D4_quarter note-C4_quarter note-B3_eighth note-G3_eighth barline note-A3_eighth note-B3_eighth note-C#4_eighth note-D#4_eighth note-E4_half"
+    },
+    {
+      "group": "manual_digital",
+      "filename": "gs15.png",
+      "gt_tokens": 27,
+      "pred_tokens": 26,
+      "errors": 1,
+      "error_rate_pct": 3.7,
+      "accuracy_pct": 96.3,
+      "prediction": "clef-G2 timeSignature-C note-C4_quarter note-D4_quarter note-E4_eighth note-D4_eighth note-E4_eighth note-F4_eighth barline note-G4_quarter note-E4_eighth note-F4_eighth note-G4_half barline note-A4_eighth note-G4_eighth note-A4_eighth note-B4_eighth note-C5_quarter note-A4_quarter barline note-G4_eighth note-F4_eighth note-D4_eighth note-E4_eighth note-C4_half"
+    },
+    {
+      "group": "manual_digital",
+      "filename": "gs16.png",
+      "gt_tokens": 26,
+      "pred_tokens": 25,
+      "errors": 1,
+      "error_rate_pct": 3.85,
+      "accuracy_pct": 96.15,
+      "prediction": "clef-G2 timeSignature-C note-A4_eighth note-B4_eighth note-C5_eighth note-D5_eighth note-E5_quarter note-G#4_quarter barline note-A4_half note-E4_quarter. note-F4_eighth barline note-E4_eighth note-F#4_eighth note-G#4_eighth note-A4_eighth note-G4_quarter note-F4_quarter barline note-E4_eighth note-D4_eighth note-C4_eighth note-B3_eighth note-C4_half"
+    },
+    {
+      "group": "manual_digital",
+      "filename": "gs17.png",
+      "gt_tokens": 27,
+      "pred_tokens": 27,
+      "errors": 0,
+      "error_rate_pct": 0.0,
+      "accuracy_pct": 100.0,
+      "prediction": "clef-G2 keySignature-FM timeSignature-C note-F4_eighth note-E4_eighth note-F4_eighth note-G4_eighth note-A4_quarter note-G4_eighth note-A4_eighth barline note-Bb4_eighth note-G4_eighth note-A4_eighth note-Bb4_eighth note-C5_half barline note-D5_quarter note-C5_quarter note-A4_quarter note-B4_quarter barline note-C5_eighth note-Bb4_eighth note-A4_eighth note-G4_eighth note-F4_half"
+    },
+    {
+      "group": "manual_digital",
+      "filename": "gs18.png",
+      "gt_tokens": 30,
+      "pred_tokens": 30,
+      "errors": 0,
+      "error_rate_pct": 0.0,
+      "accuracy_pct": 100.0,
+      "prediction": "clef-G2 keySignature-BbM timeSignature-C note-G4_eighth note-F#4_eighth note-G4_eighth note-A4_eighth note-Bb4_eighth note-G4_eighth note-D4_quarter barline note-Eb4_eighth note-D4_eighth note-E4_eighth note-F#4_eighth note-G4_half barline note-C5_eighth note-D5_eighth note-Eb5_eighth note-C5_eighth note-Bb4_quarter note-C5_eighth note-C#5_eighth barline note-D5_eighth note-C5_eighth note-Bb4_eighth note-A4_eighth note-G4_half"
+    },
+    {
+      "group": "manual_digital",
+      "filename": "gs19.png",
+      "gt_tokens": 27,
+      "pred_tokens": 27,
+      "errors": 0,
+      "error_rate_pct": 0.0,
+      "accuracy_pct": 100.0,
+      "prediction": "clef-G2 keySignature-EbM timeSignature-C note-Eb4_quarter note-F4_eighth note-G4_eighth note-Ab4_eighth note-G4_eighth note-F4_quarter barline note-G4_eighth note-Ab4_eighth note-Bb4_quarter note-C5_quarter note-D5_quarter barline note-Eb5_half note-C5_eighth note-Bb4_eighth note-Ab4_eighth note-A4_eighth barline note-Bb4_eighth note-Ab4_eighth note-G4_eighth note-F4_eighth note-Eb4_half"
+    }
+  ]
+}
