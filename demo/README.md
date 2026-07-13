@@ -20,11 +20,11 @@ Keep the Colab runtime alive while you demo.
 
 ## 2. Install local dependencies
 
-From the repo root:
+From the repo root (Windows — use `py -3 -m`, since `pip` / `playwright` may not be on PATH):
 
 ```powershell
-pip install fastapi uvicorn python-multipart httpx verovio pillow playwright
-playwright install chromium
+py -3 -m pip install fastapi uvicorn python-multipart httpx verovio pillow playwright
+py -3 -m playwright install chromium
 ```
 
 ## 3. Run the local app
