@@ -1,0 +1,14 @@
+{
+  "block_size": 64,
+  "vocab_size": 973,
+  "pad_token_id": 0,
+  "bos_token_id": 1,
+  "eos_token_id": 2,
+  "unk_token_id": 3,
+  "train_size": 35104,
+  "val_size": 1847,
+  "seed": 1234,
+  "data_dir": "data\\consolidated\\ground_truth",
+  "pattern": "primus_*.semantic",
+  "dropped_exceeding_block_size": 0
+}
