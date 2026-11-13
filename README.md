@@ -15,8 +15,8 @@ LoRA adapter for **monophonic optical music recognition (OMR)**. Given a sheet-m
 
 This is a task-specific adapter on top of [`Qwen/Qwen2-VL-2B-Instruct`](https://huggingface.co/Qwen/Qwen2-VL-2B-Instruct). Load the base model first, then apply this adapter with PEFT.
 
-- **Hugging Face model:** [`NathanZ721/omr-monophonic`](https://huggingface.co/NathanZ721/omr-monophonic)
-- **Hugging Face dataset:** [`NathanZ721/omr-monophonic-consolidated`](https://huggingface.co/datasets/NathanZ721/omr-monophonic-consolidated)
+- **Hugging Face model:** [`nzhao721/omr-monophonic`](https://huggingface.co/nzhao721/omr-monophonic)
+- **Hugging Face dataset:** [`nzhao721/omr-monophonic-consolidated`](https://huggingface.co/datasets/nzhao721/omr-monophonic-consolidated)
 
 ## Model details
 
@@ -96,7 +96,7 @@ from peft import PeftModel
 from transformers import AutoProcessor, Qwen2VLForConditionalGeneration
 
 BASE_MODEL_ID = "Qwen/Qwen2-VL-2B-Instruct"
-ADAPTER_ID = "NathanZ721/omr-monophonic"
+ADAPTER_ID = "nzhao721/omr-monophonic"
 
 processor = AutoProcessor.from_pretrained(BASE_MODEL_ID)
 model = Qwen2VLForConditionalGeneration.from_pretrained(

@@ -97,7 +97,7 @@ from peft import PeftModel
 from transformers import AutoProcessor, Qwen2VLForConditionalGeneration
 
 BASE_MODEL_ID = "Qwen/Qwen2-VL-2B-Instruct"
-ADAPTER_ID = "NathanZ721/omr-monophonic"
+ADAPTER_ID = "nzhao721/omr-monophonic"
 
 processor = AutoProcessor.from_pretrained(BASE_MODEL_ID)
 model = Qwen2VLForConditionalGeneration.from_pretrained(
